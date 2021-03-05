@@ -46,7 +46,7 @@
     }
 
     #col-1{
-        background-image: url(/images/roasting_beans.jpg);
+        background-image: url(images/roasting_beans.jpg);
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -54,7 +54,7 @@
     }
 
     #col-2{
-        background-image: url(/images/brewing.jpg);
+        background-image: url(images/brewing.jpg);
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -66,10 +66,6 @@
         display: table;
         clear: both;
     }
-
-    /* .columns div{
-        width: auto;
-    } */
 
     .columns img{
         width: 100%;
@@ -114,28 +110,28 @@
     }
 
     #slide-1{
-        background-image: url(/images/coffee-plantation-2.jpg);
+        background-image: url(images/coffee-plantation-2.jpg);
         background-size: cover;
     }
 
     #slide-2{
-        background-image: url(/images/dark-beans.jpg);
+        background-image: url(images/dark-beans.jpg);
         background-size: cover;
     }
 
     #slide-3{
-        background-image: url(/images/roasting_2.png);
+        background-image: url(images/roasting_2.png);
         background-size: cover;
     }
 
     #slide-4{
-        background-image: url(/images/capsules.jpg);
+        background-image: url(images/capsules-and-beans.jpg);
         background-position: center;
         background-size: cover;
     }
 
     #slide-5{
-        background-image: url(/images/drinking-coffee.jpg);
+        background-image: url(images/drinking-coffee.jpg);
         background-size: cover;
     }
 
@@ -204,12 +200,9 @@
     }
 
     .social-links a{
-        /* border: 1px solid black; */
-        /* border-radius: 50%; */
         margin: 0;
         padding: 5px;
         color: #fff;
-        /* background: #fff; */
     }
 
     .social h2{
@@ -219,8 +212,6 @@
 
     .social-links a:hover{
         color: rgb(0, 0, 0);
-        /* background: rgb(255, 150, 150); */
-        /* border: 1px solid #fff; */
         transition: 0.5s;
     }
 
@@ -245,4 +236,59 @@
         text-align: center;
         color: rgb(0, 0, 0);
         font-size: 13px;
+    }
+
+    @media (max-width: 550px){
+
+        html{
+            margin: 15px;
+        }
+
+        #intext{
+            float: right;
+            margin: 3px;
+            width: 170px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .columns{
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+        }
+    
+        .col{
+            float: center;
+            width: 100%;
+        }
+    
+        .columns img{
+            width: 100%;
+            height: 200px;
+        }
+    
+        .columns div{
+            margin: auto;
+        }
+
+        #slide-1{
+            background-position: center;
+        }
+    
+        #slide-2{
+            background-position: center;
+        }
+    
+        #slide-3{
+            background-position: center;
+        }
+    
+        #slide-4{
+            background-position: center;
+        }
+    
+        #slide-5{
+            background-position: center;
+        }
     }
